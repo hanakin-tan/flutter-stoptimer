@@ -14,14 +14,14 @@ class StorageService {
     } else {
       history.add(time);
     }
-    print('StorageService/addHistory:$history');
+//    print('StorageService/addHistory:$history');
     await sharedPreferences.setStringList(_historyKey, history);
   }
 
   Future<List<String>> getAllHistory() async {
     SharedPreferences sharedPreferences = await _sharedPreferences;
     List<String> history = await sharedPreferences.getStringList(_historyKey);
-    print('StorageService/getAllHistory:$history');
+//    print('StorageService/getAllHistory:$history');
     return history;
   }
 

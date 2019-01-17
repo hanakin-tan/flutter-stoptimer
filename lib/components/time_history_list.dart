@@ -25,9 +25,7 @@ class TimeHistoryListState extends State<TimeHistoryList> {
             case ConnectionState.waiting:
               return ListView();
             case ConnectionState.done:
-              if (snapshot.hasError || snapshot.data == null)
-//                return Text('${snapshot.error}');
-                return ListView();
+              if (snapshot.hasError || snapshot.data == null) return ListView();
               final List<String> historyItems = snapshot.data;
               TextStyle textStyle =
                   const TextStyle(fontSize: 20.0, color: Colors.white);
