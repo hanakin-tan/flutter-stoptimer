@@ -1,6 +1,6 @@
-# plank_app
+# timer_app
 
-A new Flutter application for plank.
+A new Flutter application, stop timer.
 
 ## Getting Started
 
